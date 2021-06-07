@@ -1,0 +1,24 @@
+body>article {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 20px;
+    word-spacing: 3%;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+article:nth-child(2) {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    word-spacing: 5%;
+    letter-spacing: 5px;
+    margin-top: 30px;
+}
+
+
+/* .article h1:nth-child(1) {
+    color: #3f1d1d;
+} */
+
+h1:nth-child(1) {
+    color: #0c0750;
+}
