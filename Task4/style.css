@@ -1,0 +1,21 @@
+#cont {
+    display: inline-block;
+    background-image:
+    url(/Task4/assets/HUp.png),
+    url(/Task4/assets/VUp.png),
+    url(/Task4/assets/VUp.png),
+    url(/Task4/assets/HDn.png);
+    background-position-x: center, left,   right, center;
+    background-position-y: top, center,   center, bottom;
+    background-repeat: no-repeat;
+    padding: 5px;
+    background-size: contain;
+    
+    
+}
+
+p {
+    padding: 35px;
+    margin: 30px;
+}
+
