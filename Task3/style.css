@@ -15,10 +15,10 @@ article:nth-child(2) {
     word-spacing: 5%;
     letter-spacing: 5px;
     margin-top: 30px;
-    text-indent: 50px; 
+    text-indent: 50px;
 }
 
-article::first-letter{
+article::first-letter {
     color: #ff8c00;
     font-weight: bolder;
     font-size: 45px;
@@ -43,26 +43,26 @@ a:visited {
     text-decoration: none;
 }
 
-[data-title]:hover:after {
+.pseudo-tooltip-wrapper:hover:after {
     opacity: 1;
     transition: all 0.1s ease 0.5s;
     visibility: visible;
 }
 
-[data-title]:after {
+.pseudo-tooltip-wrapper:after {
     content: attr(data-title);
     position: absolute;
     bottom: -1.8em;
     right: 50%;
     padding: 4px 4px 4px 8px;
     color: #222;
-    white-space: nowrap; 
-    border-radius: 5px;  
-    box-shadow: 0px 0px 4px #522929;  
-    background-image: -webkit-linear-gradient(top, #f8f8f8, #cccccc);  
+    white-space: nowrap;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #522929;
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #cccccc);
     opacity: 0;
-  
 }
-[data-title] {
+
+.pseudo-tooltip-wrapper {
     position: relative;
 }
