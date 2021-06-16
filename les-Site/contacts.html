@@ -17,12 +17,15 @@
             <input type="text" name="name" placeholder="Имя" autofocus required>
             <label for="age" >Ваш возраст</label>
             <input name="age" type="number" value="18" placeholder="полных лет" required>
-            <div class="gender">
-                <span>Ваш пол:</span>
-                <label for="male">Мужской</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="female">Женский</label>
-                <input type="radio" id="female" name="gender" value="female">
+            <div>
+                <span>Ваш пол:
+                    <div class="gender">
+                        <label for="male">Мужской</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="female">Женский</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                    </div>        
+                </span>
             </div>
             <label for="email" autocomplete="off">Email:</label>
             <input type="email" placeholder="email">
