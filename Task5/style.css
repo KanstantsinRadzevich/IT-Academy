@@ -1,0 +1,58 @@
+body {
+    max-width: 1280px;
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-size: large;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul {
+    color: rgb(70, 70, 182);
+}
+
+img {
+    float: left;
+    margin: 5px;
+}
+
+.left-side {
+    position: sticky;
+    width: 250px;
+    float: left;
+}
+
+main {
+    width: 100%;
+}
+
+.main-text {
+    position: relative;
+    margin-left: 15%;
+    background-image: url(img/ball.jpg);
+}
+
+header,
+footer {
+    width: 100%;
+    background-color: steelblue;
+    color: mediumblue;
+    text-align: center;
+}
+
+aside {
+    /* width: 50px;
+    height: 50px; */
+    background-image: url(img/ball.jpg);
+    background-size: 50px;
+    background-repeat: repeat-y;
+    float: right;
+    opacity: .6;
+}
+
+footer {
+    clear: both;
+}
