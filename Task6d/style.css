@@ -2,25 +2,47 @@ body {
     margin: 0;
 }
 
-main {
+.star {
+    overflow: hidden;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 250px;
 }
 
-img {
-    width: 150px;
+.star>input {
+    display: none;
 }
 
-div>a:hover:not(.three):not(.four):not(.five) {
-    content: url(img/star.png);
-    width: 150px;
+.star:not(:checked)>label {
+    float: right;
+    margin-right: 250px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 32px;
+    color: lightgrey;
 }
 
+.star:not(:checked)>label:before {
+    content: "★";
+}
 
-/* a:hover:not(.two):not(.three):not(.four):not(.five) {
-    content: url(img/star.png);
-    width: 150px;
-} */
+.star>input:checked~label {
+    color: red;
+}
+
+.star:not(:checked)>label:hover,
+.star:not(:checked)>label:hover~label {
+    color: red;
+}
+
+.star>input:checked+label:hover,
+.star>input:checked+label:hover~label,
+.star>input:checked~label:hover,
+.star>input:checked~label:hover~label,
+.star>label:hover~input:checked~label {
+    color: red;
+}
+
+.star>label:active {
+    position: relative;
+}
