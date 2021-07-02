@@ -18,8 +18,11 @@ main {
     font-style: italic;
 }
 
-a::before {
-    content: url(img/extref.png);
+a[href^="https"] {
+    background-image: url(img/extref.png);
+    background-repeat: no-repeat;
+    float: left;
+    padding-left: 10px;
 }
 
 footer {
