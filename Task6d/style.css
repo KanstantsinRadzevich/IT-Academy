@@ -13,3 +13,14 @@ main {
 img {
     width: 150px;
 }
+
+div>a:hover:not(.three):not(.four):not(.five) {
+    content: url(img/star.png);
+    width: 150px;
+}
+
+
+/* a:hover:not(.two):not(.three):not(.four):not(.five) {
+    content: url(img/star.png);
+    width: 150px;
+} */
