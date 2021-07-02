@@ -1,0 +1,64 @@
+a:hover{
+    color: red;
+}
+
+/**/
+.first>div {
+   display: flex;
+}
+
+.first a {
+    margin: 5px;
+    padding: 10px;
+    border-right: 4px darkred solid;
+}
+
+.first {
+    margin-top: 10px;
+}
+/**/
+.second {
+    display: inline-block;
+}
+
+.second {
+    width: 570px;
+    margin-top: 10px;
+}   
+
+.second a {
+    margin: 10px;
+    padding: 5px;
+    border-right: 4px darkred solid;
+}
+/**/
+.third {
+    display: grid;
+    width: 550px;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.third a {
+    margin: 10px;
+    padding: 5px;
+    border-right: 4px darkred solid;
+}
+
+/**/
+td {
+    border-right: 4px darkred solid ;
+    padding: 5px;
+    margin: 10px;
+}
+
+.fourth>div {
+    display: inline-block;
+    display: inline-table;
+    width: 120px;
+    padding: 5px;
+   
+}
+.fourth div div a {
+    border-right: darkred 4px solid;
+    padding: 5px;
+}
