@@ -7,15 +7,19 @@ a:hover{
    display: flex;
 }
 
+.first {
+    margin-top: 10px;
+} 
+
 .first a {
     margin: 5px;
     padding: 10px;
     border-right: 4px darkred solid;
 }
 
-.first {
-    margin-top: 10px;
-}
+.first a:last-of-type {
+    border: none;
+  }
 /**/
 .second {
     display: inline-block;
@@ -31,6 +35,9 @@ a:hover{
     padding: 5px;
     border-right: 4px darkred solid;
 }
+.second a:last-of-type {
+    border: none;
+  }
 /**/
 .third {
     display: grid;
@@ -44,21 +51,34 @@ a:hover{
     border-right: 4px darkred solid;
 }
 
+.third a:last-of-type {
+    border: none;
+  }
 /**/
-td {
-    border-right: 4px darkred solid ;
-    padding: 5px;
-    margin: 10px;
-}
 
 .fourth>div {
     display: inline-block;
     display: inline-table;
     width: 120px;
     padding: 5px;
-   
+    
 }
 .fourth div div a {
     border-right: darkred 4px solid;
     padding: 5px;
 }
+
+.fourth>div+div:last-child a {
+    border: none;
+}
+
+/**/
+
+td {
+    border-right: 4px darkred solid ;
+    padding: 5px;
+    margin: 10px;
+}
+td:last-of-type {
+    border: none;
+  }
