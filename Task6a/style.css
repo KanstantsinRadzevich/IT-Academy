@@ -1,15 +1,17 @@
-a:hover{
+a:hover {
     color: red;
 }
 
+
 /**/
+
 .first>div {
-   display: flex;
+    display: flex;
 }
 
 .first {
     margin-top: 10px;
-} 
+}
 
 .first a {
     margin: 5px;
@@ -19,8 +21,11 @@ a:hover{
 
 .first a:last-of-type {
     border: none;
-  }
+}
+
+
 /**/
+
 .second {
     display: inline-block;
 }
@@ -28,17 +33,21 @@ a:hover{
 .second {
     width: 570px;
     margin-top: 10px;
-}   
+}
 
 .second a {
     margin: 10px;
     padding: 5px;
     border-right: 4px darkred solid;
 }
+
 .second a:last-of-type {
     border: none;
-  }
+}
+
+
 /**/
+
 .third {
     display: grid;
     width: 550px;
@@ -53,15 +62,17 @@ a:hover{
 
 .third a:last-of-type {
     border: none;
-  }
+}
+
+
 /**/
 
 .fourth>div {
     display: inline-table;
     width: 120px;
     padding: 5px;
-    
 }
+
 .fourth div div a {
     border-right: darkred 4px solid;
     padding: 5px;
@@ -71,13 +82,15 @@ a:hover{
     border: none;
 }
 
+
 /**/
 
 td {
-    border-right: 4px darkred solid ;
+    border-right: 4px darkred solid;
     padding: 5px;
     margin: 10px;
 }
+
 td:last-of-type {
     border: none;
-  }
+}
