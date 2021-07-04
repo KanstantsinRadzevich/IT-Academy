@@ -25,6 +25,8 @@ h1 {
 }
 
 .main-page {
+    /* position: relative;
+    z-index: 2; */
     color: #775d09;
     text-align: justify;
     font-size: 1.2em;
@@ -32,9 +34,10 @@ h1 {
 }
 
 .ourservis {
+    /* position: absolute;
+    z-index: 1; */
     background-image: url(/les-Site/assets/img/coffee-beans-kofe-zerna-5.jpg);
     opacity: .5;
-    text-transform: capitalize;
 }
 
 .navigation-bar {

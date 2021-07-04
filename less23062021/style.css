@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    position: sticky;
+    top: 0;
+    border-bottom: 5px #4682b4 solid;
+    background-color: #65dbebc4;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 300px;
+    color: #9acd32;
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 200px);
+}
+
+div {
+    background: rgba(241, 30, 241, 0.3);
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq9sLwtXmHl1ftVq627gt-39BrBuIkc6c67Q&usqp=CAU");
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.myDiv {
+    position: relative;
+}
+
+.resizediv {
+    resize: horizontal;
+    overflow: hidden;
+}
+
+input {
+    caret-color: transparent;
+    background-color: rgba(0, 128, 128, 0.219);
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    border-top: 1px #ff0000 solid;
+    background-color: bisque;
+    box-sizing: border-box;
+}
