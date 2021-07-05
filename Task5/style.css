@@ -1,36 +1,40 @@
 body {
-    width: 100%;
     height: 100%;
     margin: 0;
+    position: relative; /*для заполнения aside на всю страницу*/
+}
+
+aside {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background-image: url(img/ball2.png);
+    background-size: 45px;
+    background-repeat: repeat-y;
+    right: 0;
+    opacity: .6;
+    z-index: -1;
 }
 
 main {
-    width: 100%;
     min-height: calc(100vh - 120px);
-    position: relative;
 }
 
 .main-text {
-    position: relative;
-    padding-top: 25px;
     text-align: justify;
     box-sizing: border-box;
     padding: 10px;
-    
 }
 .main-text>div {
     padding-top: 15px;
-   
 }
 
 .left-side {
-    position: sticky;
     width: 250px;
     min-height: calc(100vh - 120px);
     float: left;
     background-color: darkgoldenrod;
     margin-right: 10px;
-    z-index: 1;
 }
 
 ul {
@@ -49,20 +53,8 @@ h1 {
     font-size: large;
     text-transform: uppercase;
     text-align: center;
-    
 }
 
-aside {
-    position: absolute;
-    width: 50px;
-    height: 100%;
-    background-image: url(img/ball2.png);
-    background-size: 45px;
-    background-repeat: repeat-y;
-    right: 0;
-    opacity: .6;
-    z-index: -1;
-}
 
 .rules {
     margin-top: 5px;
@@ -77,7 +69,6 @@ aside {
 
 header,
 footer {
-    width: 100%;
     height: 60px;
     background-color: steelblue;
     color: mediumblue;
