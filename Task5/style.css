@@ -1,7 +1,7 @@
 body {
     height: 100%;
     margin: 0;
-    position: relative;
+    position: relative; /*для заполнения aside на всю страницу*/
 }
 
 aside {
@@ -24,11 +24,9 @@ main {
     text-align: justify;
     box-sizing: border-box;
     padding: 10px;
-    
 }
 .main-text>div {
     padding-top: 15px;
-   
 }
 
 .left-side {
@@ -55,7 +53,6 @@ h1 {
     font-size: large;
     text-transform: uppercase;
     text-align: center;
-    
 }
 
 
