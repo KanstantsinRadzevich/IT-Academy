@@ -2,7 +2,7 @@ a:hover{
     color: red;
 }
 
-/**/
+/*первый способ*/
 .first>div {
    display: flex;
 }
@@ -20,7 +20,7 @@ a:hover{
 .first a:last-of-type {
     border: none;
   }
-/**/
+/*второй способ*/
 .second {
     display: inline-block;
 }
@@ -38,7 +38,7 @@ a:hover{
 .second a:last-of-type {
     border: none;
   }
-/**/
+/*третий способ*/
 .third {
     display: grid;
     width: 550px;
@@ -54,7 +54,8 @@ a:hover{
 .third a:last-of-type {
     border: none;
   }
-/**/
+
+/*четвертый способ*/
 
 .fourth>div {
     display: inline-block;
