@@ -1,10 +1,22 @@
 body {
     height: 100%;
     margin: 0;
+    position: relative;
+}
+
+aside {
+    position: absolute;
+    width: 50px;
+    height: 100%;/*calc(100vh - 120px);*/
+    background-image: url(img/ball2.png);
+    background-size: 45px;
+    background-repeat: repeat-y;
+    right: 0;
+    opacity: .6;
+    z-index: -1;
 }
 
 main {
-    width: 100%;
     min-height: calc(100vh - 120px);
 }
 
@@ -46,17 +58,6 @@ h1 {
     
 }
 
-aside {
-    position: absolute;
-    width: 50px;
-    min-height: calc(100vh - 120px);
-    background-image: url(img/ball2.png);
-    background-size: 45px;
-    background-repeat: repeat-y;
-    right: 0;
-    opacity: .6;
-    z-index: -1;
-}
 
 .rules {
     margin-top: 5px;
