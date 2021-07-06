@@ -1,3 +1,30 @@
+@font-face {
+  font-family: fontawesome-webfont;
+  src: url(assets/fonts/fontawesome-webfont.eot); /* IE */
+  src: url(assets/fonts/fontawesome-webfont.svg); /* Legacy iOS */
+  src: url(assets/fonts/fontawesome-webfont.ttf); /* Safari, Android, iOS */
+  src: url(assets/fonts/fontawesome-webfont.woff); /* Modern Browsers */
+  src: url(assets/fonts/fontawesome-webfont.woff2); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: glyphicons-halflings-regular;
+  src: url(assets/fonts/glyphicons-halflings-regular.eot); /* IE */
+  src: url(assets/fonts/glyphicons-halflings-regular.svg); /* Legacy iOS */
+  src: url(assets/fonts/glyphicons-halflings-regular.ttf); /* Safari, Android, iOS */
+  src: url(assets/fonts/glyphicons-halflings-regular.woff); /* Modern Browsers */
+  src: url(assets/fonts/glyphicons-halflings-regular.woff2); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: icon-font;
+    src: url(assets/fonts/icon-font.eot); /* IE */
+    src: url(assets/fonts/icon-font.svg); /* Legacy iOS */
+    src: url(assets/fonts/icon-font.ttf); /* Safari, Android, iOS */
+    src: url(assets/fonts/icon-font.woff); /* Modern Browsers */
+    src: url(assets/fonts/icon-font.woff2); /* Modern Browsers */
+}
+
 html, body {
   margin: 0;
 }
