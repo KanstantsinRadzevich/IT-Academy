@@ -8,12 +8,16 @@
     <title>Delex</title>
 </head>
 <body>
-    <div class="bg"></div>
-    <div class="preloader">
-        <div class="preloader__image"></div>
-    </div>
-
-    <header>
+    <section>
+        <div class="preloader">
+            <div class="preloader__image"></div>
+        </div>
+    </section>
+    <section>
+        <div class="bg"></div>
+    </section>
+    
+    <header class="header-ind-page">
         <div class="logo">
             Delex
         </div>
@@ -25,16 +29,32 @@
         </nav>
     </header>
     
-    <main>
-        <h1>
-            Best ideas for your Buisiness
-        </h1>
-        <h3>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, doloribus voluptate ex quam debitis mollitia quas praesentium non perspiciatis modi ipsum explicabo hic animi quidem. Reiciendis, modi? Quidem, alias quae dicta, libero rem suscipit dolorum necessitatibus culpa modi, possimus enim. Temporibus exercitationem natus et?
-        </h3>
-        <a href="bestservices.html"><button>get started</button></a>
+    <main class="main-ind-page">
+        <section>
+            <h1>
+                Best ideas for your Buisiness
+            </h1>
+        </section>
+        <section>
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus voluptates quos necessitatibus voluptatem, nisi saepe numquam corrupti nemo quas neque aliquid error aperiam!
+            </h3>
+        </section>
+        <section>
+            <a href="bestservices.html"><button>get started</button></a>
+        </section>
     </main>
-    
+    <!-- <div class="central-title">
+        Best Services
+    </div>
+    <div class="services">
+        <div class="item-servis">
+            creative ideas
+            <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi reiciendis alias blanditiis provident. Dolorum, necessitatibus adipisci.
+            </div>
+        </div>
+    </div> -->
     <script>
         window.onload = function () {
           document.body.classList.add('loaded_hiding');
