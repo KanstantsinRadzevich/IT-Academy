@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Delex</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            Delex
+        </div>
+        <nav>
+            <a href="index.html" target="_blank">home</a>
+            <a href="bestservices.html" target="_blank">services</a>
+            <a href="http://">testmonials</a>
+            <a href="contactus.html" target="_blank">contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>
+            Best ideas for your Buisiness
+        </h1>
+        <h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, doloribus voluptate ex quam debitis mollitia quas praesentium non perspiciatis modi ipsum explicabo hic animi quidem. Reiciendis, modi? Quidem, alias quae dicta, libero rem suscipit dolorum necessitatibus culpa modi, possimus enim. Temporibus exercitationem natus et?
+        </h3>
+        <a href="bestservices.html"><button>get started</button></a>
+    </main>
+    
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+</body>
+</html>

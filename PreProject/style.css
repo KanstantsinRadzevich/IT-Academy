@@ -1,0 +1,147 @@
+html, body {
+  margin: 0;
+}
+
+body {
+  max-width: 1600px;
+  
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #fff;
+    z-index: 1001;
+  }
+  
+  .preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-top: -30px;
+    margin-left: -30px;
+    background: url('assets/images/preloader.gif') no-repeat 50% 50%;
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .logo, nav {
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  
+  a, button {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h1, h3 {
+    text-align: center;
+  }
+
+  
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('assets/images/bg-5.jpg');
+    opacity: 0.8;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+  color: #31a331;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  button {
+    font-size: large;
+    background-color: #31a331;
+    color: #fff;
+    border: 1px  #31a331 solid;
+    border-radius: 5px;
+  }
+
+  .contact-us {
+    text-align: center;
+  }
+
+  /* form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+  } */
+
+  input {
+    width: 45%;
+    justify-content: flex-start;
+  }
+  
+  .submit {
+    align-items: center;
+  }
+
+  .foter-contact-us {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #cccfd1;
+    padding: 10px;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+
+  }
+  .item6 {
+    grid-row: 2 / 4;
+  }
+
+  .foter-contact-us>div {
+    width: 150px;
+  }
+
+  .footer-black-line {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: cornsilk;
+    text-align: center;
+    padding: 20px;
+   
+  }
