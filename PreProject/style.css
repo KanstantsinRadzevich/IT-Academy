@@ -391,19 +391,46 @@ button {
 
   
   
-  /* .item-img1:before {
-    content: url(assets/images/edit-solid.svg);
-    width: 25px;
-    height: 25px;
-    color: orange;
-  } */
-  
+
   
   /*contact-us*/
-  .contact-us {
-    text-align: center;
+
+  .contacts {
+    width: 1280px;
+    min-width: 100%;
+    min-height: 80%;
+    display: grid;
+    grid-area: 
+      "title-contact" 1fr
+      "form-contact" 4fr
+      /1fr
+      ;
   }
   
+  .main-contacts-form {
+    width: 1280px;
+    min-width: 100%;
+    min-height: 80%;
+    display: grid;
+    grid-area: 
+      "title-contact" 1fr
+      "form-contact" 4fr
+      /1fr
+      ;
+
+  }
+
+.contacts-form {
+  width: 1280px;
+  min-width: 100%;
+  min-height: 80%;
+  display: grid;
+  grid-area: 
+      "title-contact" 1fr
+      "form-contact" 4fr
+      /1fr
+      ;
+  }
   /* form {
     width: 100%;
     display: flex;
@@ -411,14 +438,28 @@ button {
     justify-content: center;
     margin: 20px;
   } */
-  main {
+  /* main {
     min-width: 800px;
     height: 600px;
     display: flex;
     flex-wrap: wrap;
     margin: 100px auto auto auto;
-  }
+  } */
   
+  .inputfields {
+    width: 1280px;
+    min-width: 100%;
+    min-height: 80%;
+    display: grid;
+    grid-area: 
+      "label-input-name label-input-email" 1fr
+      "input-name input-email" 1fr
+      "label-input-message label-input-message" 1fr
+      "input-message input-message" 2fr
+      /1fr 1fr
+      ;
+  }
+
   input {
     width: 45%;
     justify-content: flex-start;
