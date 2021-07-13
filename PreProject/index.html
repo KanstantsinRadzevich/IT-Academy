@@ -20,11 +20,11 @@
             <div class="logo">
                 Delex
             </div>
-            <nav>
-                <a href="index.html" target="_blank">home</a>
-                <a href="bestservices.html" target="_blank">services</a>
-                <a href="http://">testmonials</a>
-                <a href="contactus.html" target="_blank">contact</a>
+            <nav class="content-nav">
+                <a href="index.html"><button>home</button></a>
+                <a href="#services" ><button>services</button></a>
+                <a href="#"><button>testmonials</button></a>
+                <a href="#contactus"><button>contact</button></a>
             </nav>
         </header>
         
@@ -35,9 +35,8 @@
             <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, minus voluptates quos necessitatibus voluptatem, nisi saepe numquam corrupti nemo quas neque aliquid error aperiam!
             </h3>
-            <div class="button">
-                <a href="bestservices.html"><button>get started</button></a>
-            </div>
+            <a href="#"><button>get started</button></a>
+           
         </div>
         <div class="slider-one">
             <h4>Best Services</h4>
@@ -48,7 +47,7 @@
         </div>   
     </section>
 
-    <section class="content-second">
+    <section id="services" class="content-second">
         <div class="services">
             <div class="icon-servis svg-icon-1">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" class="svg-icon-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -152,39 +151,38 @@
         </div>
     </section>
 
-    <section class="contacts">
-        <div>
+    <section class="contacts" id="contactus">
+        <div class="contacts-head">
             <h1 class="contact-us">Contact Us</h1>
+            <div class="bg-point"></div>
+            <div class="bg-point"></div>
+            <div class="bg-point"></div>
         </div>
-        <main>
-            <form>
-                <div class="inputfields">
-                    <div><label for="name">Name</label></div>
-                    <div><input type="text" placeholder="Name" id="name"></div>
-                    <div><label for="email">Email</label></div>
-                    <div><input type="email" placeholder="Email" id="email"></div>
-                    <div><label for="message">Message</label></div>
-                    <div><textarea name="message" id="message" cols="80" rows="20"></textarea></div>
-                </div>
-                <button class="submit">submit</button>
-            </form>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. A excepturi id facere accusantium veniam fugit nostrum tempore in iure earum? Porro sed ipsam ea reiciendis.</div>
+        <main class="main-contacts-form">
+            <form class="contacts-form" method="post">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name" id="name">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="80" rows="10"  placeholder="Message"></textarea>
+                <div class="lorem-form">Lorem ipsum dolor sit amet consectetur adipisicing elit. A excepturi id facere accusantium veniam fugit nostrum tempore in iure earum? Porro sed ipsam ea reiciendis.</div>
+                <button class="submit">Submit</button>
+                </form>
         </main>
         <footer>
             <div class="footer-contact-us">
-                <div class='item1'>keep in touch</div>
-                <div class='item2'>address</div>
-                <div class='item3'>support</div>
+                <div class='item1 title'>keep in touch</div>
+                <div class='item2 title'>address</div>
+                <div class='item3 title'>support</div>
                 <div class='item6'>f g+ t f</div>
                 <div class='item4'>464 sdfsdf asdasdas</div>
-                <div class='item5'>You need support& Visit our support forum and open tickets for your questions/</div>
-            
-            
+                <div class='item5'>You need support? Visit our support forum and open tickets for your questions.</div>
                 <div class='item7'>+0123465789 www.domain.com info@domain.com</div>
-                <div class='item8'><a href="https//google.com" target="_blank"></a></div>
-            </div>
-            <div class="footer-black-line">
-                2020Dtuhsjd 
+                <div class='item8'><a href="https//google.com" target="_blank"><button>forum</button></a></div>
+                <div class="footer-black-line">
+                    &copy;2022. Delex. Design by Template Stock.
+                </div>
             </div>
         </footer>    
     </section>
