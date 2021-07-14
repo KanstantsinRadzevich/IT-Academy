@@ -175,6 +175,7 @@ a {
     color: #fff;
     font-family: fontawesome-webfont;
     margin: 0;
+    color: #d3d3d3;
 }
 
 button {
@@ -272,6 +273,7 @@ h4 {
 
 .text-services {
     font-family: icon-font;
+    color: #808080;
 }
 
 /* SVG-icons*/
@@ -284,30 +286,6 @@ h4 {
 .svg-icon-6 {
     width: 100px;
     height: 100px;
-}
-
-.svg-icon-1 {
-    fill: red;
-}
-
-.svg-icon-2 {
-    fill: rgb(56, 180, 221);
-}
-
-.svg-icon-3 {
-    fill: rgb(167, 167, 53);
-}
-
-.svg-icon-4 {
-    fill: violet;
-}
-
-.svg-icon-5 {
-    fill: red;
-}
-
-.svg-icon-6 {
-    fill: green;
 }
 
 .icon-servis.svg-icon-1 {
@@ -336,11 +314,12 @@ h4 {
 
 .item-servis-one {
     grid-area: item1;
-    width: 75%;
+    width: 70%;
 }
 
 .item-servis-two {
     grid-area: item2;
+    width: 70%;
 }
 
 .item-servis-three {
@@ -350,11 +329,12 @@ h4 {
 
 .item-servis-four {
     grid-area: item4;
-    width: 75%;
+    width: 70%;
 }
 
 .item-servis-five {
     grid-area: item5;
+    width: 70%;
 }
 
 .item-servis-six {
@@ -416,7 +396,6 @@ h4 {
     width: 50px;
     height: 50px;
     color: #2cd39d;
-    ;
 }
 
 .slider-two-points>div.bg-point {
@@ -451,7 +430,7 @@ h4 {
 
 
 .contacts-form {
-    width: 85%;
+    width: 90%;
     height: 60vh;
     display: grid;
     grid-template: "label-input-name label-input-email" 0.5fr
@@ -466,7 +445,7 @@ h4 {
 
 input,
 textarea {
-    border: 2px #808080 solid;
+    border: 3px #808080 solid;
     font-size: 1.5rem;
 }
 
@@ -505,6 +484,7 @@ textarea[id="message"] {
     text-align: center;
     align-self: center;
     font-size: 1.3rem;
+    color: #808080;
 }
 
 .submit {
@@ -554,6 +534,7 @@ label {
 
 .item5 {
     grid-area: right-center;
+    width: 75%;
 }
 
 .item6 {
@@ -568,6 +549,27 @@ label {
     grid-area: right-down;
 }
 
+.item6 {
+    display: flex;
+    width: 200px;
+    height: 120px;
+   
+}
+
+.footer-contact-us .title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.text {
+    color: #666565;
+}
+.item6>a img {
+    border: 1px #808080 solid;
+    border-radius: 100%;
+    padding: 5px;
+} 
 .footer-black-line {
     grid-area: bottom;
     width: 100%;
@@ -575,12 +577,6 @@ label {
     background-color: black;
     color: cornsilk;
     padding-top: 10px;
-}
-
-.footer-contact-us .title {
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: bold;
 }
 
 .btn-forum {
