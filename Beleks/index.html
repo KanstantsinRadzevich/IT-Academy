@@ -4,9 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beleks</title>
+    <meta name="description" content="Международные грузоперевозки от группы компаний &quot;Белэкс&quot;. Более 20 лет на рынке транспортно-логистических услуг."/>
+    <link rel="stylesheet" href="style.css">
+    <title>«БЕЛЭКС» | Международные грузоперевозки быстро, качественно и надежно!</title>
+    <link rel="icon" href="assets/img/logo.png" sizes="32x32" />
 </head>
 <body>
+    <div class="main-grid">
+        <header class="header">
+            <img src="assets/img/logo.png" alt="">
+            <a href=""><button>Расчёт стоимости</button></a>
+            <a href="#"><button>Личный кабинет</button></a>
+            <a href=""><button>Отзывы</button></a>
+        </header>
+
+        <div class="aside">
+            <div class="partners-img"> Наши партнеры:
+                <img src="assets/img/partners/8Marta.jpg" alt="">
+                <img src="assets/img/partners/adinol.jpg" alt="">
+                <img src="assets/img/partners/Agromash.gif" alt="">
+                <img src="assets/img/partners/amkodor.jpg" alt="">
+                <img src="assets/img/partners/belaruskabel.png" alt="">
+                <img src="assets/img/partners/bobruiskselmash.jpg" alt="">
+                <img src="assets/img/partners/CaspianPipline.jpg" alt="">
+                <img src="assets/img/partners/Conte.png" alt="">
+                <img src="assets/img/partners/eurotorg.jpg" alt="">
+                <img src="assets/img/partners/MarkFormelle.jpg" alt="">
+                <img src="assets/img/partners/Neman.jpg" alt="">
+                <img src="assets/img/partners/specavtotechnika.jpg" alt="">
+            </div>
+        </div>
+        <div class="about-us">
+            <h3>ГРУППА КОМПАНИЙ</h3>
+            <h1>БЕЛЭКС</h1>
+            <div>Надёжность и профессионализм в действии</div>
+            <div>Доверяя нам - вы делаете разумный выбор</div>
+            <p>Наша компания осуществляет деятельность на рынке международных автомобильных перевозок с <strong>1995 года</strong> и состоит из <strong>6</strong> филиалов (<strong>«Белэкс и К»</strong> , «Белэкс-Логистик» <strong>Беларусь</strong>, «Белэкс и К Ташкент» <strong>Узбекистан</strong> , «Белэкс Уральск KZ» <strong>Казахстан</strong>, «Белэкс Белосток» <strong>Польша</strong>, «Белэкс и К» <strong>Россия</strong>).</p>
+            <p>Мы специализируемся на автотранспортных грузоперевозках из стран <strong>Европы</strong> и <strong>СНГ</strong> в страны <strong>Центральной Азии</strong>: Туркменистан, Узбекистан, Казахстан, Таджикистан, Киргизия, Монголия, Азербайджан, Грузия, Армения и дальняя Россия.</p>
+        </div>
+        <div class="traks">
+            <p>
+                Наш автопарк насчитывает более 200 единиц техники грузоподьемностью более 20 тонн 
+            </p>
+        </div>
+        <div class="all-companies-title">Компании, которые входят в нашу группу:</div>
+        <div class="all-companies">
+            <div class="all-companies-item">
+                <div>ОДО &#171;Белэкс-Логистик&#187;</div>
+                <p>246027, Беларусь, г. Гомель</p>
+                <p>ул. Борисенко, 3</p>
+                <a href="mailto:office@beleks.com">office@beleks.com</a>
+            </div>
+            <div class="all-companies-item">
+                <div>ООО &#171;Белэкс и К»&#187;</div>
+                <p>243020, Россия, г. Новозыбков</p>
+                <p>ул. Комсомольская, 5, оф. 5</p>
+                <a href="mailto:office@beleks.com">office@beleks.com</a>
+            </div>    
+            <div class="all-companies-item">
+                <div>Sp.z o.o. &#171;Beleks Białystok PL&#187;</div>
+                <p>15-399, Польша, Białystok</p>
+                <p>Ul. Handlowa 7</p>
+                <a href="mailto:office@beleks.com">office@beleks.com</a>
+            </div>
+            <div class="all-companies-item">
+                <div>СП ООО &#171;Белэкс и К Ташкент&#187;</div>
+                <p>100077, Узбекистан, г. Ташкент</p>
+                <p>ул. Мирзо-Улугбек, 32</p>
+                <a href="mailto:office@beleks.com">office@beleks.com</a>
+            </div>
+            <div class="all-companies-item">
+                <div>ТОО &#171;Белэкс Уральск KZ&#187;</div>
+                <p>090000, Казахстан, г. Уральск</p>
+                <p>пр-т Абулхаир Хана 8/1</p>
+                <a href="mailto:office@beleks.com">office@beleks.com</a>
+            </div>
+            
+        </div>
+        <div class="count">
+            Предваритьельный расчет стоимости перевозки:
+            <form class="count-form" action="post">
+                <label for="from">Откуда:</label>
+                <input type="text" id="from" placeholder="Страна, Город (квадрат)">
+                <label for="to">Куда:</label>
+                <input type="text" id="to" placeholder="Страна, Город (квадрат)">
+                <label for="data-ready">Груз готов:</label>
+                <input type="date" id="data-ready" placeholder="Дата загрузки">
+                <label for="delivery-period">Срок доставки, дней:</label>
+                <input type="number" id="delivery-period" placeholder="Дни" min="1">
+                <button type="button" id="calculate">Рассчитать</button>
+                <button type="submit">Отправить заявку</button>
+                <button type="reset">Очисить поля</button>
+            </form>
+        </div>
+        <div class="review">
+            Оствьте Ваше мнение о нас:
+            <form class="review-form" action="post">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" placeholder="Ваше имя">
+                <label for="email">email:</label>
+                <input type="email" id="email" placeholder="email">
+                <button type="submit" id="review">Отправить заявку</button>
+                <button type="reset">Очисить поля</button>
+            </form>
+        </div>
+        <footer class="footer"></div>
+    </div>
     
 </body>
 </html>
