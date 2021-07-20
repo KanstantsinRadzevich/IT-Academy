@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anketa</title>
+</head>
+
+<body>
+    Результат анкеты:
+    <div id="anketa"></div>
+    <script>
+        let firstName = prompt('Ваше имя');
+        let secondName = prompt('Ваше отчество');
+        let lastName = prompt('Ваша фамилия');
+        let age = prompt('Ваш возраст');
+        let male = confirm('Ваш пол мужской?');
+        let pensioner;
+
+        if (male) {
+            male = 'мужской';
+        } else {
+            male = 'женский';
+        };
+
+        if (age >= 65 && male === 'мужской' || age >= 60 && male === 'женский') {
+            pensioner = 'да';
+        } else {
+            pensioner = 'нет';
+        };
+
+        alert('ваше ФИО:' + ' ' + lastName + ' ' + firstName + ' ' + secondName + '\n' + 'ваш возраст в годах:' + ' ' + age + '\n' + 'ваш возраст в днях:' + ' ' + age * 365 + '\n' + 'через 5 лет вам будет:' + ' ' + (Number(age) + 5) + '\n' + 'ваш пол:' + ' ' + male + '\n' + 'вы на пенсии:' + ' ' + pensioner);
+    </script>
+</body>
+
+</html>
