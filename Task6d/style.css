@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.star {
+    margin-top: 250px;
+    font-size: 50px;
+    text-decoration: none;
+    color: gray;
+}
+
+.star:hover,
+.star:hover~.star {
+    color: red;
+}
