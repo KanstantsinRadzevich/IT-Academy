@@ -5,11 +5,13 @@ a:hover{
 /*первый способ*/
 .first>div {
    display: flex;
+=======
 }
 
 .first {
     margin-top: 10px;
 } 
+
 
 .first a {
     margin: 5px;
@@ -19,8 +21,11 @@ a:hover{
 
 .first a:last-of-type {
     border: none;
+
   }
 /*второй способ*/
+
+
 .second {
     display: inline-block;
 }
@@ -28,6 +33,7 @@ a:hover{
 .second {
     width: 570px;
     margin-top: 10px;
+
 }   
 
 .second a {
@@ -35,10 +41,13 @@ a:hover{
     padding: 5px;
     border-right: 4px darkred solid;
 }
+
 .second a:last-of-type {
     border: none;
-  }
+ }
+
 /*третий способ*/
+
 .third {
     display: grid;
     width: 550px;
@@ -53,6 +62,7 @@ a:hover{
 
 .third a:last-of-type {
     border: none;
+
   }
 
 /*четвертый способ*/
@@ -64,6 +74,11 @@ a:hover{
     padding: 5px;
     
 }
+
+
+
+
+
 .fourth div div a {
     border-right: darkred 4px solid;
     padding: 5px;
@@ -72,6 +87,8 @@ a:hover{
 .fourth>div+div:last-child a {
     border: none;
 }
+
+
 
 /*пятый способ*/
 
@@ -83,3 +100,4 @@ td {
 td:last-of-type {
     border: none;
   }
+
