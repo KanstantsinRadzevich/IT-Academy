@@ -1,17 +1,18 @@
-a:hover{
+a:hover {
     color: red;
 }
 
+
 /*первый способ*/
+
 .first>div {
-   display: flex;
-=======
+    display: flex;
+    =======
 }
 
 .first {
     margin-top: 10px;
-} 
-
+}
 
 .first a {
     margin: 5px;
@@ -21,10 +22,10 @@ a:hover{
 
 .first a:last-of-type {
     border: none;
+}
 
-  }
+
 /*второй способ*/
-
 
 .second {
     display: inline-block;
@@ -33,8 +34,7 @@ a:hover{
 .second {
     width: 570px;
     margin-top: 10px;
-
-}   
+}
 
 .second a {
     margin: 10px;
@@ -44,7 +44,8 @@ a:hover{
 
 .second a:last-of-type {
     border: none;
- }
+}
+
 
 /*третий способ*/
 
@@ -62,8 +63,8 @@ a:hover{
 
 .third a:last-of-type {
     border: none;
+}
 
-  }
 
 /*четвертый способ*/
 
@@ -72,12 +73,7 @@ a:hover{
     display: inline-table;
     width: 120px;
     padding: 5px;
-    
 }
-
-
-
-
 
 .fourth div div a {
     border-right: darkred 4px solid;
@@ -89,15 +85,14 @@ a:hover{
 }
 
 
-
 /*пятый способ*/
 
 td {
-    border-right: 4px darkred solid ;
+    border-right: 4px darkred solid;
     padding: 5px;
     margin: 10px;
 }
+
 td:last-of-type {
     border: none;
-  }
-
+}
