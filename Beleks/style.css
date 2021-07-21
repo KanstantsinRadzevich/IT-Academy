@@ -53,29 +53,19 @@
         max-height: 100vh;
         box-sizing: border-box;
         background-color: rgba(238, 238, 238, 0.95);
-        
     }
-    
     
     .main-grid {
         max-width: 100%;
         height: 100vh;
         display: grid;
-        grid-template:
-            "header header" 20vh
-            "about-us aside" 1fr
-            "traks count" 2fr
-            "our-companies-title review" 10vh
-            "our-companies review " 2fr
-            "footer footer" 1fr
-            "baseline baseline"
-            /4fr 1fr;
+        grid-template: "header header" 20vh "about-us aside" 1fr "traks count" 2fr "our-companies-title review" 10vh "our-companies review " 2fr "footer footer" 1fr "baseline baseline" /4fr 1fr;
     }
     
     .header {
         grid-area: header;
     }
-
+    
     .aside {
         grid-area: aside;
     }
@@ -111,11 +101,12 @@
     .footer {
         grid-area: footer;
     }
+    
     .baseline {
         grid-area: baseline;
     }
-
     /*styles*/
+    
     h1,
     h3 {
         font-family: 'Crete Round', serif;
@@ -141,7 +132,7 @@
         margin-top: 160px;
         text-align: center;
     }
-
+    
     .header {
         grid-area: header;
         height: 20vh;
@@ -162,8 +153,7 @@
     
     .header>img {
         max-width: 200px;
-        /* transform: translateY(5px); */
-    }   
+    }
     
     .header a button {
         min-width: 100px;
@@ -187,14 +177,12 @@
         text-align: center;
         text-shadow: 1px 1px rgba(147, 150, 118, 0.773);
     }
-    
     /* aside partners*/
-
+    
     .partners-img {
         display: block;
         box-sizing: border-box;
         margin-left: 10px;
-       
     }
     
     .partners-img-header {
@@ -208,11 +196,9 @@
         max-height: 50px;
         padding: 10px;
         border: 1px grey solid;
-                    
     }
-    
     /*about-us*/
-
+    
     .about-us {
         background-image: url(assets/img/header-img_cr.jpg);
         background-repeat: no-repeat;
@@ -233,15 +219,12 @@
         padding: 15px;
         color: rgb(8, 44, 33);
     }
-    
-   
-
     /*traks*/
-   
+    
     .traks>div {
         margin-top: 20px;
     }
-
+    
     ul {
         display: inline-block;
         font-size: 1.4rem;
@@ -253,7 +236,16 @@
         font-size: 1.5rem;
         text-align: justify;
         padding: 30px;
-       
+    }
+    
+    .eu {
+        font-weight: bold;
+        color: darkblue;
+    }
+    
+    .as {
+        font-weight: bold;
+        color: orangered;
     }
     /*our companies*/
     
@@ -286,7 +278,6 @@
         position: absolute;
         z-index: -1;
         opacity: 0.6;
-
     }
     
     .our-companies-item {
@@ -295,7 +286,6 @@
         padding: 0 5px 0 5px;
         text-align: center;
         font-size: 1rem;
-        
     }
     
     .our-companies-item>div {
@@ -303,7 +293,6 @@
         font-weight: bold;
         color: rgb(8, 59, 8);
     }
-
     /* Count-Form*/
     
     .count {
@@ -324,7 +313,6 @@
         border: 2px grey solid;
         padding: 10px;
         background-color: rgba(117, 216, 255, 0.425);
-       
     }
     
     .count-form>label {
@@ -359,18 +347,17 @@
         transform: scale3d(1.1);
         box-shadow: floralwhite;
     }
-
     /*review*/
     
     .review {
-    display: flex;
-    font-size: 1.2rem;
-    color: darkblue;
-    text-align: center;
-    font-weight: bold;
-    flex-direction: column;
-    align-items: center;
-    transform: translateY(-10px);
+        display: flex;
+        font-size: 1.2rem;
+        color: darkblue;
+        text-align: center;
+        font-weight: bold;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-10px);
     }
     
     .review-form {
@@ -399,7 +386,6 @@
         box-sizing: border-box;
         font-size: 1rem;
         color: rgb(0, 0, 0);
-
         font-weight: bold;
     }
     
@@ -412,7 +398,7 @@
     
     .footer {
         display: grid;
-        grid-template: "docs-head cont-head" "docs-lic cont-tel" "docs-svid cont-email" "docs-custom-decl footer-signs" "copyr copyr" ;
+        grid-template: "docs-head cont-head" "docs-lic cont-tel" "docs-lic cont-email" "docs-lic footer-adress" "copyr copyr";
         font-size: 1.2rem;
         justify-items: center;
         align-items: flex-start;
@@ -427,18 +413,6 @@
         grid-area: docs-lic;
     }
     
-    .docs-svid {
-        grid-area: docs-svid;
-    }
-    
-    .docs-custom-decl {
-        grid-area: docs-custom-decl;
-    }
-    
-    .footer-signs {
-        grid-area: footer-signs;
-    }
-    
     .cont-head {
         grid-area: cont-head;
     }
@@ -451,24 +425,29 @@
         grid-area: cont-email;
     }
     
+    .footer-adress {
+        grid-area: footer-adress;
+    }
+    
     .copyr {
         grid-area: copyr;
     }
-
+    
     .docs-head,
     .cont-head {
         font-weight: bolder;
         color: darkblue;
         padding-top: 20px;
-       
-       
     }
-
-    .footer-button {
+    
+    a[target="_blank"]>img {
+        width: 75px;
+    }
+    /* .footer-button {
         padding: 5px;
         margin: 20px;
         box-sizing: border-box;
-        border:1px inset grey;
+        border: 1px inset grey;
         border-radius: 5px;
         box-shadow: 5px 5px 5px rgba(189, 250, 245, 0.6);
         font-weight: bold;
@@ -482,23 +461,21 @@
         box-shadow: 5px 15px 5px rgba(141, 146, 146, 0.719);
         cursor: pointer;
     }
-
+     */
+    
     .footer-signs {
         display: inline-flex;
         filter: grayscale(1);
         opacity: 0.7;
         box-sizing: border-box;
         justify-content: center;
-        
-       
     }
+    
     .footer-signs>img {
         max-width: 100px;
-       
     }
-
     /*baseline*/
-
+    
     .baseline {
         background-color: black;
         color: blanchedalmond;
