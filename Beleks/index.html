@@ -14,7 +14,7 @@
 
 <body>
     <div class="main-grid">
-        <header class="header">
+        <header>
             <img src="assets/img/logo.png" alt="Logo">
             <div>Надёжность и профессионализм в действии.</div>
             <div>Доверяя нам - вы делаете разумный выбор!</div>
@@ -23,13 +23,12 @@
             <a href="#review"><button>Написать отзыв</button></a>
         </header>
 
-        <div class="about-us">
+        <main>
             <h3>ГРУППА КОМПАНИЙ</h3>
             <h1>&#171;БЕЛЭКС&#187;</h1>
             <h4> Транспортно-экспедиционные услуги по организации перевозок грузов автомобильным транспортом из <strong>Европы в Азию и из Азии в Европу</strong></h4>
-        </div>
-        <div class="our-companies">
-            <div class="our-companies-map"></div>
+        </main>
+        <section class="our-companies">
             <div class="our-companies-item">
                 <div>ОДО &#171;Белэкс-Логистик&#187;,</div>
                 <div>ОДО &#171;Белэкс и К&#187;</div>
@@ -41,14 +40,14 @@
                 <div>ООО</div>
                 <div>&#171;Белэкс и К&#187;</div>
                 <p>243020, Россия, г. Новозыбков</p>
-                <p>ул. Комсомольская, 5, оф. 5</p>
+                <p>ул. Комсомольская, 5, офис 5</p>
                 <a href="mailto:office@beleks.com">office@beleks.com</a>
             </div>
             <div class="our-companies-item">
                 <div>Sp.z o.o.</div>
                 <div>&#171;Beleks Białystok PL&#187;</div>
                 <p>15-399, Польша, Białystok</p>
-                <p>Ul. Handlowa 7</p>
+                <p>Ulica  Handlowa  dom 7, office 15 </p>
                 <a href="mailto:office@beleks.com">office@beleks.com</a>
             </div>
             <div class="our-companies-item">
@@ -62,11 +61,11 @@
                 <div>ТОО</div>
                 <div> &#171;Белэкс Уральск KZ&#187;</div>
                 <p>090000, Казахстан, г. Уральск</p>
-                <p>пр-т Абулхаир Хана 8/1</p>
+                <p>проспект Абулхаир Хана 8/1</p>
                 <a href="mailto:office@beleks.com">office@beleks.com</a>
             </div>
-        </div>
-        <div class="traks">
+        </section>
+        <section class="traks">
             <div>За более, чем 25 лет на рынке, мы детально овладели особенностями перевозок из стран <span class="eu">Европы</span>:</div>
             <ul>
                 <li>Бельгия</li>
@@ -120,41 +119,41 @@
                 Наш автопарк состоит из более 200 единиц современной техники (DAF, SCANIA, MAN, IVECO, VOLVO, Камаз). Объем полезной загрузки полуприцепа - 33 европаллета (до 90 м<sup>3</sup>).
             </p>
             <p>
-                На всех наших тягачах установлены современные датчики по контролю за его работой. Сбор данных - 24 часа в сутки, 7 дней в неделю, 365 дней в году с целью постоянного контроля за перемещением перевозимых грузов.
+                На всех тягачах установлены современные датчики по контролю за его работой. Сбор данных - 24 часа в сутки, 7 дней в неделю, 365 дней в году с целью постоянного контроля за перемещением перевозимых грузов.
             </p>
             <p>
-                Разработку маршрутов и сопровождение грузов по всему маршруту осуществляют опытные экспедиторы, способные эффективно разрешить, возникающие при дальних перевозках, вопросы.
+                Разработку маршрутов и сопровождение грузов на всей протяженности пути осуществляют опытные экспедиторы, способные эффективно разрешить, возникающие в процессе перевозки, вопросы.
             </p>
             <p>
                 Высококвалифицированные водители обладают навыками перевозок различных типов и классов опасности грузов. Наши отделения в Казахстане, Узбекистане, России и Польше способствуют ускорению и надежности автоперевозок.
             </p>
             <p>
-                Мы обеспечиваем безопасную и своевременную перевозку вверенных вами нам грузов.
+                Мы обеспечиваем безопасную и своевременную перевозку вверенных нам грузов.
             </p>
-        </div>
+        </section>
 
-        <div class="docs">
+        <section class="docs">
             <a href="assets/pdf/Certificate.pdf" target="_blank" title="Свидетельство о регистрации"><img src="assets/img/svid-bic.png" alt="Свидетельство  о регистрации"></a>
             <a href="assets/pdf/license.pdf" target="_blank" title="Лицензия"><img src="assets/img/lic-bic.png" alt="Лицензия"></a>
             <a href="assets/pdf/Customs_Carrier.pdf" target="_blank" title="Свидетельство Таможенный перевозчик"><img src="assets/img/custom-bic.png" alt="Таможенный перевозчик"></a>
-        </div>
+        </section>
 
-        <div class="aside">
+        <aside>
             <div class="count" id="count">
-                Ориентировочный расчет стоимости перевозки:
+                Расчет Ориентировочной стоимости перевозки:
                 <form class="count-form" action="post">
                     <label for="from">Откуда:</label>
-                    <input type="text" id="from" name="cargo" placeholder="Страна, Город (квадрат)">
+                    <input type="text" id="from" name="cargo" placeholder="*Страна, Город (квадрат)"required>
                     <label for="to">Куда:</label>
-                    <input type="text" id="to" name="cargo" placeholder="Страна, Город (квадрат)">
+                    <input type="text" id="to" name="cargo" placeholder="*Страна, Город (квадрат)"required>
                     <label for="weight">Масса груза в тоннах: <span id="weight"></span></label>
-                    <input type="range" id="weightVal" name="cargo" min="1" max="24" step="0.25" oninput="myWeight()">
+                    <input type="range" id="weightVal" name="cargo" min="1" max="24" step="0.25" oninput="myWeight()"required>
                     <label for="description-cargo ">Описание груза:</label>
-                    <textarea name="description-cargo" id="description-cargo" placeholder="Сыпучий, дерево, табак, текстиль"></textarea>
+                    <textarea name="description-cargo" id="description-cargo"  rows="4" placeholder="Сыпучий, дерево, табак, текстиль"></textarea>
                     <label for="dangerous" class="dangerous-class">Опасный груз:</label>
                     <input type="checkbox" name="cargo" class="dangerous-class" id="dangerousVal" value="Yes">
                     <label for="data-ready">Груз готов:</label>
-                    <input type="date" id="data-ready" placeholder="Дата загрузки">
+                    <input type="date" id="data-ready" placeholder="*Дата загрузки" required>
                     <label for="delivery-period">Срок доставки, дней:</label>
                     <input type="number" id="delivery-period" placeholder="Дни" min="1">
                     <button type="button" id="calculate">Рассчитать</button>
@@ -163,6 +162,25 @@
                     <button type="submit" value="Submit">Отправить заявку</button>
                     <button type="reset">Очистить поля</button>
                 </form>
+            </div>
+            
+            <div class="review" id="review">
+                <div class="reviw-header"> Нам важно Ваше мнение!</div>
+                <form class="review-form" action="post">
+                    <div><label for="name">Ваше имя:</label></div>
+                    <div><input type="text" id="name" placeholder="Введите имя" required></div>
+                    <div><label for="email-reviw">E-mail:</label></div>
+                    <div><input type="email" id="email-reviw" placeholder="Ваш email " required></div>
+                    <div><label for="reviw-text-area">Введите текст:</label></div>
+                    <div><textarea id="reviw-text-area" rows="6" cols="40" maxlength="150" placeholder="Оставьте свое мнение о нас (максимум 150 символов)" required></textarea></div>
+                    <div><button type="button" id="submit-review" value="Submit">Отправить отзыв</button></div>
+                    <div><button type="reset" class="reset-review">Очистить</button></div>
+                </form>
+            </div>
+            <div class="reviws-items">
+                <div class="reviws-item-header">Отзывы клиентов:</div>
+                <div id="reviws-item-content" class="reviw-item-content-class"> </div>
+                <div id="reviws-item-name" class="reviws-item-name"></div>
             </div>
             <div class="partners ">
                 <div class="partners-img ">
@@ -181,47 +199,30 @@
                     <img src="assets/img/partners/specavtotechnika.jpg " alt=" ">
                 </div>
             </div>
-            <div class="review" id="review">
-                <div class="reviw-header"> Нам важно Ваше мнение!</div>
-                <form class="review-form" action="post">
-                    <div><label for="name">Ваше имя:</label></div>
-                    <div><input type="text" id="name " placeholder="Введите имя"></div>
-                    <div><label for="email-reviw">E-mail:</label></div>
-                    <div><input type="email" id="email-reviw " placeholder="Ваш email"></div>
-                    <div><label for="text-area">Введите текст:</label></div>
-                    <div><textarea id="text-area" rows="5 " cols="40 " maxlength="150" placeholder="Оставьте свое мнение о нас (максимум 150 символов)"></textarea></div>
-                    <div><button type="button " id="submit-review " value="Submit ">Отправить отзыв</button></div>
-                    <div><button type="reset" class="reset-review">Очистить</button></div>
-                </form>
-            </div>
-            <div class="reviw-items ">
-                <div class="reviw-item-header ">Отзывы клиентов:</div>
-                <div id="reviw-item-content " class="reviw-item-content-class "> </div>
-                <div id="reviw-item-name "></div>
-            </div>
-        </div>
+        </aside>
 
-        <footer class="footer ">
-            <div class="footer-signs ">
-                <img src="assets/img/signs/bamap-cr.gif " alt="Bamap ">
-                <img src="assets/img/signs/bame.png " alt="bame ">
-                <img src="assets/img/signs/fiata.png " alt="Fiata ">
-                <img src="assets/img/signs/iso.png " alt="ISO ">
-                <img src="assets/img/signs/Logo_rsuto1000x1039px.png " alt="Rsuto ">
-                <img src="assets/img/signs/iru.png " alt="IRU ">
-            </div>
-            <div class="cont-head ">Консультации по перевозкам грузов:</div>
-            <div class="cont-tel ">
-                <a href="tel:+375232555555 " class="cont-phone "> +375(232)555555 </a>
-                <div class="cont-email "><a href="mailto:office@beleks.com ">office@beleks.com</a></div>
-                <div class="footer-adress "> 246027, Беларусь, г. Гомель, ул. Борисенко, 3 </div>
-            </div>
-            <div class="baseline ">
-                <div class="copyr "> &#0169;Сайт и информация на нем принадлежит Beleks.</div>
-                <div class="copyr "> Разработка сайта: кodzevich.k@gmail.com</div>
-            </div>
+        <footer>
+            <section class="footer-signs">
+                <img src="assets/img/signs/bamap-cr.gif" alt="Bamap">
+                <img src="assets/img/signs/bame.png" alt="bame">
+                <img src="assets/img/signs/fiata.png" alt="Fiata">
+                <img src="assets/img/signs/iso.png" alt="ISO">
+                <img src="assets/img/signs/Logo_rsuto1000x1039px.png" alt="Rsuto">
+                <img src="assets/img/signs/iru.png" alt="IRU">
+            </section>
+            <div class="cont-head">Консультации по перевозкам грузов:</div>
+            <section class="cont-tel">
+                <a href="tel:+375232555555" class="cont-phone"> +375(232)555555 </a>
+                <div class="cont-email"><a href="mailto:office@beleks.com">office@beleks.com</a></div>
+                <div class="footer-adress"> 246027, Беларусь, г. Гомель, ул. Борисенко, 3 </div>
+            </section>
+            <section class="baseline">
+                <div class="copyr"> &#0169;Сайт и информация на нем принадлежит Beleks.</div>
+                <div class="copyr"> Разработка сайта: rodzevich.k@gmail.com</div>
+            </section>
         </footer>
     </div>
+    
 </body>
 
 </html>

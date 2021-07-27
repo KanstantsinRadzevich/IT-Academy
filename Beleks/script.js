@@ -4,10 +4,10 @@ document.getElementById('alert').addEventListener('click', function() {
 
 document.getElementById('submit-review').addEventListener('click', function() {
     let nameReviewer = document.getElementById('name').value;
-    document.getElementById('reviw-item-name').innerHTML = ('***' + nameReviewer + '***');
-    document.getElementById('reviw-item-content').innerHTML = document.getElementById('text-area').value;
-})
+    document.getElementById('reviws-item-name').innerHTML = ('***' + nameReviewer + '***');
+    document.getElementById('reviws-item-content').innerHTML = document.getElementById('reviw-text-area').value;
+});
 
 function myWeight() {
     document.getElementById('weight').innerHTML = document.getElementById('weightVal').value;
-}
+};
