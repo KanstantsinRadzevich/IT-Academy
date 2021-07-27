@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Международные грузоперевозки от группы компаний &quot;Белэкс&quot;. Более 20 лет на рынке транспортно-логистических услуг." />
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>«БЕЛЭКС» | Международные грузоперевозки быстро, качественно и надежно!</title>
     <link rel="icon" href="assets/img/logo.png" sizes="32x32" />
 </head>
@@ -115,24 +116,21 @@
                 <li>Дальняя Россия...</li>
             </ul>
 
-            <div>
-                Наш автопарк - более 200 единиц современной техники (SCANIA, MAN, DAF, IVECO, VOLVO, Камаз и др.).
-            </div>
-            <div>
-                Объем полезной загрузки полуприцепа - 33 европаллета (до 90 м3).
-            </div>
-            <div>
+            <p>
+                Наш автопарк состоит из более 200 единиц современной техники (DAF, SCANIA, MAN, IVECO, VOLVO, Камаз). Объем полезной загрузки полуприцепа - 33 европаллета (до 90 м<sup>3</sup>).
+            </p>
+            <p>
                 На всех наших тягачах установлены современные датчики по контролю за его работой. Сбор данных - 24 часа в сутки, 7 дней в неделю, 365 дней в году с целью постоянного контроля за перемещением перевозимых грузов.
-            </div>
-            <div>
+            </p>
+            <p>
                 Разработку маршрутов и сопровождение грузов по всему маршруту осуществляют опытные экспедиторы, способные эффективно разрешить, возникающие при дальних перевозках, вопросы.
-            </div>
-            <div>
+            </p>
+            <p>
                 Высококвалифицированные водители обладают навыками перевозок различных типов и классов опасности грузов. Наши отделения в Казахстане, Узбекистане, России и Польше способствуют ускорению и надежности автоперевозок.
-            </div>
-            <div>
+            </p>
+            <p>
                 Мы обеспечиваем безопасную и своевременную перевозку вверенных вами нам грузов.
-            </div>
+            </p>
         </div>
 
         <div class="docs">
@@ -149,92 +147,81 @@
                     <input type="text" id="from" name="cargo" placeholder="Страна, Город (квадрат)">
                     <label for="to">Куда:</label>
                     <input type="text" id="to" name="cargo" placeholder="Страна, Город (квадрат)">
-                    <label for="weight">Масса груза:</label>
-                    <input type="range" id="weight" name="cargo" placeholder="Масса в тоннах" min="1">
-                    <label for="description-cargo">Описание груза:</label>
-                    <input type="text" id="description-cargo" name="cargo" placeholder="Описание груза">
+                    <label for="weight">Масса груза в тоннах: <span id="weight"></span></label>
+                    <input type="range" id="weightVal" name="cargo" min="1" max="24" step="0.25" oninput="myWeight()">
+                    <label for="description-cargo ">Описание груза:</label>
+                    <textarea name="description-cargo" id="description-cargo" placeholder="Сыпучий, дерево, табак, текстиль"></textarea>
                     <label for="dangerous" class="dangerous-class">Опасный груз:</label>
-                    <input type="checkbox" name="cargo" class="dangerous-class" id="dangerous" value="Yes">
+                    <input type="checkbox" name="cargo" class="dangerous-class" id="dangerousVal" value="Yes">
                     <label for="data-ready">Груз готов:</label>
                     <input type="date" id="data-ready" placeholder="Дата загрузки">
                     <label for="delivery-period">Срок доставки, дней:</label>
                     <input type="number" id="delivery-period" placeholder="Дни" min="1">
                     <button type="button" id="calculate">Рассчитать</button>
                     <label for="email-count">E-mail  для обратной связи:</label>
-                    <input type="email" id="email-count" placeholder="email">
+                    <input type="email" id="email-count" placeholder="email ">
                     <button type="submit" value="Submit">Отправить заявку</button>
                     <button type="reset">Очистить поля</button>
                 </form>
             </div>
-            <div class="partners">
-                <div class="partners-img">
-                    <div class="partners-img-header">Наши партнеры:</div>
-                    <img src="assets/img/partners/8Marta.jpg" alt="">
-                    <img src="assets/img/partners/adinol.jpg" alt="">
-                    <img src="assets/img/partners/Agromash.gif" alt="">
-                    <img src="assets/img/partners/amkodor.jpg" alt="">
-                    <img src="assets/img/partners/belaruskabel.png" alt="">
-                    <img src="assets/img/partners/bobruiskselmash.jpg" alt="">
-                    <img src="assets/img/partners/CaspianPipline.jpg" alt="">
-                    <img src="assets/img/partners/Conte.png" alt="">
-                    <img src="assets/img/partners/eurotorg.jpg" alt="">
-                    <img src="assets/img/partners/MarkFormelle.jpg" alt="">
-                    <img src="assets/img/partners/Neman.jpg" alt="">
-                    <img src="assets/img/partners/specavtotechnika.jpg" alt="">
+            <div class="partners ">
+                <div class="partners-img ">
+                    <div class="partners-img-header ">Наши партнеры:</div>
+                    <img src="assets/img/partners/8Marta.jpg " alt=" ">
+                    <img src="assets/img/partners/adinol.jpg " alt=" ">
+                    <img src="assets/img/partners/Agromash.gif " alt=" ">
+                    <img src="assets/img/partners/amkodor.jpg " alt=" ">
+                    <img src="assets/img/partners/belaruskabel.png " alt=" ">
+                    <img src="assets/img/partners/bobruiskselmash.jpg " alt=" ">
+                    <img src="assets/img/partners/CaspianPipline.jpg " alt=" ">
+                    <img src="assets/img/partners/Conte.png " alt=" ">
+                    <img src="assets/img/partners/eurotorg.jpg " alt=" ">
+                    <img src="assets/img/partners/MarkFormelle.jpg " alt=" ">
+                    <img src="assets/img/partners/Neman.jpg " alt=" ">
+                    <img src="assets/img/partners/specavtotechnika.jpg " alt=" ">
                 </div>
             </div>
             <div class="review" id="review">
                 <div class="reviw-header"> Нам важно Ваше мнение!</div>
                 <form class="review-form" action="post">
                     <div><label for="name">Ваше имя:</label></div>
-                    <div><input type="text" id="name" placeholder="Введите имя"></div>
+                    <div><input type="text" id="name " placeholder="Введите имя"></div>
                     <div><label for="email-reviw">E-mail:</label></div>
-                    <div><input type="email" id="email-reviw" placeholder="Ваш email"></div>
+                    <div><input type="email" id="email-reviw " placeholder="Ваш email"></div>
                     <div><label for="text-area">Введите текст:</label></div>
-                    <div><textarea id="text-area" rows="5" cols="40" maxlength="150" placeholder=" Оставьте свое мнение о нас (максимум 150 символов)"></textarea></div>
-                    <div><button type="button" id="submit-review" value="Submit">Отправить отзыв</button></div>
+                    <div><textarea id="text-area" rows="5 " cols="40 " maxlength="150" placeholder="Оставьте свое мнение о нас (максимум 150 символов)"></textarea></div>
+                    <div><button type="button " id="submit-review " value="Submit ">Отправить отзыв</button></div>
                     <div><button type="reset" class="reset-review">Очистить</button></div>
                 </form>
             </div>
-            <div class="reviw-items">
-                <div class="reviw-item-header">Отзывы клиентов:</div>
-                <div id="reviw-item-content" class="reviw-item-content-class"> </div>
-                <div id="reviw-item-name"></div>
+            <div class="reviw-items ">
+                <div class="reviw-item-header ">Отзывы клиентов:</div>
+                <div id="reviw-item-content " class="reviw-item-content-class "> </div>
+                <div id="reviw-item-name "></div>
             </div>
         </div>
 
-        <footer class="footer">
-            <div class="footer-signs">
-                <img src="assets/img/signs/bamap-cr.gif" alt="Bamap">
-                <img src="assets/img/signs/bame.png" alt="bame">
-                <img src="assets/img/signs/fiata.png" alt="Fiata">
-                <img src="assets/img/signs/iso.png" alt="ISO">
-                <img src="assets/img/signs/Logo_rsuto1000x1039px.png" alt="Rsuto">
-                <img src="assets/img/signs/iru.png" alt="IRU">
+        <footer class="footer ">
+            <div class="footer-signs ">
+                <img src="assets/img/signs/bamap-cr.gif " alt="Bamap ">
+                <img src="assets/img/signs/bame.png " alt="bame ">
+                <img src="assets/img/signs/fiata.png " alt="Fiata ">
+                <img src="assets/img/signs/iso.png " alt="ISO ">
+                <img src="assets/img/signs/Logo_rsuto1000x1039px.png " alt="Rsuto ">
+                <img src="assets/img/signs/iru.png " alt="IRU ">
             </div>
-            <div class="cont-head">Консультации по перевозкам грузов:</div>
-            <div class="cont-tel">
-                <a href="tel:+375232555555" class="cont-phone"> +375(232)555555 </a>
-                <div class="cont-email"><a href="mailto:office@beleks.com">office@beleks.com</a></div>
-                <div class="footer-adress"> 246027, Беларусь, г. Гомель, ул. Борисенко, 3 </div>
+            <div class="cont-head ">Консультации по перевозкам грузов:</div>
+            <div class="cont-tel ">
+                <a href="tel:+375232555555 " class="cont-phone "> +375(232)555555 </a>
+                <div class="cont-email "><a href="mailto:office@beleks.com ">office@beleks.com</a></div>
+                <div class="footer-adress "> 246027, Беларусь, г. Гомель, ул. Борисенко, 3 </div>
             </div>
-            <div class="baseline">
-                <div class="copyr"> &#0169;Сайт и информация на нем принадлежит Beleks.</div>
-                <div class="copyr"> Разработка сайта: кodzevich.k@gmail.com</div>
+            <div class="baseline ">
+                <div class="copyr "> &#0169;Сайт и информация на нем принадлежит Beleks.</div>
+                <div class="copyr "> Разработка сайта: кodzevich.k@gmail.com</div>
             </div>
         </footer>
     </div>
-    <script>
-        document.getElementById('alert').addEventListener('click', function() {
-            alert("Данный модуль в настоящее время находится в стадии разработки");
-        });
-        document.getElementById('submit-review').addEventListener('click', function() {
-            let nameReviewer = document.getElementById('name').value;
-            document.getElementById('reviw-item-name').innerHTML = ('***' + nameReviewer + '***');
-            document.getElementById('reviw-item-content').innerHTML = document.getElementById('text-area').value;
-
-        })
-    </script>
 </body>
 
 </html>

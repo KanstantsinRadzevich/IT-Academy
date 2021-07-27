@@ -187,7 +187,7 @@
                     color: rgb(197, 125, 31);
                     font-size: 1.8rem;
                     padding: 0 10px;
-                    text-shadow: 2px 2px rgba(94, 93, 92, 0.6);
+                    text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
                 }
                 /*our companies*/
                 
@@ -213,11 +213,7 @@
                 }
                 /*traks*/
                 
-                .traks>div {
-                    padding-top: 1.5vw;
-                }
-                
-                .traks div:first-child {
+                .traks p:first-child {
                     padding-top: 0;
                 }
                 
@@ -229,19 +225,16 @@
                 }
                 
                 .traks {
+                    width: 90%;
                     font-size: 1.5vw;
                     text-align: justify;
-                    padding: 30px;
+                    justify-self: center;
                 }
                 
-                .eu {
-                    font-weight: bold;
-                    color: rgb(3, 94, 136);
-                }
-                
+                .eu,
                 .as {
                     font-weight: bold;
-                    color: rgb(3, 94, 136);
+                    color: #035e88;
                 }
                 /*our docs*/
                 
@@ -254,21 +247,27 @@
                 }
                 
                 a[target="_blank"]>img {
-                    width: 200px;
-                    max-width: 95%;
+                    width: 90%;
+                    max-width: 200px;
                     background-color: blanchedalmond;
                     padding: 5px;
                     border: 1px solid orange;
                     box-shadow: 2px 3px gray;
+                    transition: transform .8s;
+                    box-sizing: border-box;
+                }
+                
+                a[target="_blank"]>img:hover {
+                    transform: scale(1.5);
                 }
                 /*aside*/
                 
                 .aside {
-                    max-width: 100%;
+                    max-width: 90%;
                     max-height: calc(100vh - 25vh - 180px);
                     display: flex;
                     flex-direction: column;
-                    margin-right: 10px;
+                    align-items: center;
                 }
                 
                 .aside>div {
@@ -277,40 +276,48 @@
                 /* Count-Form*/
                 
                 .count {
-                    max-width: 100%;
-                    font-size: 1.5vw;
+                    font-size: 1.3rem;
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                     font-weight: bold;
+                    width: 100%;
                     padding-bottom: 20px;
                     text-align: center;
-                    border: 2px grey solid;
                     border-radius: 5px;
                     background-image: linear-gradient(rgba(117, 216, 255, 0.425), rgba(201, 138, 56, 0.719));
                     box-sizing: border-box;
                     color: rgb(146, 106, 31);
+                    box-shadow: 1px 1px 2px 2px #4e4b4b98;
                 }
                 
                 .count-form {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    font-size: 1.5em;
                     padding: 10px;
+                    width: 100%;
+                    box-sizing: border-box;
                 }
                 
                 .count-form>label {
-                    font-size: 1vw;
+                    font-size: 1rem;
                     font-weight: bold;
                     color: rgb(85, 88, 88);
                 }
                 
                 .count-form>input {
-                    min-width: 95%;
-                    max-width: 30%;
-                    font-size: 1vw;
-                    color: rgb(150, 151, 151);
+                    width: 100%;
+                    font-size: 1rem;
+                    color: rgb(53, 53, 53);
                     padding: 5px;
-                    border-radius: 5px;
+                    border-radius: 3px;
+                    box-shadow: 1px 2px #4e4b4b98;
+                    box-sizing: border-box;
+                }
+                
+                textarea:focus,
+                input:focus {
+                    background-color: rgba(98, 153, 255, 0.151);
+                    color: rgb(27, 27, 27);
                 }
                 
                 .count-form>button {
@@ -328,6 +335,7 @@
                     font-weight: bold;
                     max-width: 10vw;
                     padding: 10px;
+                    box-shadow: 1px 2px #4e4b4b98;
                 }
                 
                 .count-form>button:hover {
@@ -335,35 +343,54 @@
                     transform: scale3d(1.1);
                     box-shadow: floralwhite;
                 }
+                
+                #weight {
+                    font-size: 1rem;
+                    height: 25px;
+                    position: relative;
+                    justify-content: center;
+                }
+                
+                #description-cargo {
+                    width: 100%;
+                    font-size: 1rem;
+                    color: rgb(150, 151, 151);
+                    padding: 5px;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    box-shadow: 1px 2px #4e4b4b98;
+                }
+                
+                #dangerousVal {
+                    cursor: pointer;
+                }
                 /* aside partners*/
                 
-                .partners-img {
-                    display: block;
-                    max-width: 95%;
-                    max-height: 70vh;
-                    font-size: 1.5vw;
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                .partners-img-header {
+                    font-weight: 1rem;
                     font-weight: bold;
+                    color: rgb(146, 106, 31);
                     text-align: center;
+                    font-weight: bold;
+                }
+                
+                .partners-img {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    height: 35vh;
                     border: 2px grey solid;
                     border-radius: 5px;
                     background-image: linear-gradient(rgba(117, 216, 255, 0.425), rgba(201, 138, 56, 0.719));
                     box-sizing: border-box;
-                }
-                
-                .partners-img-header {
-                    font-weight: bold;
-                    color: rgb(146, 106, 31);
-                    text-align: center;
-                    margin: 2vh 10vh 2vh 10vh;
-                    font-weight: bold;
+                    box-shadow: 1px 1px 2px 2px #4e4b4b98;
+                    padding: 10px;
                 }
                 
                 .partners-img>img {
                     align-items: center;
-                    max-height: 5%;
+                    max-height: 15%;
                     max-width: 25%;
-                    padding: 5px;
                     border: 1px grey solid;
                 }
                 /*review*/
@@ -383,6 +410,7 @@
                     background-image: linear-gradient(rgba(117, 216, 255, 0.425), rgba(201, 138, 56, 0.719));
                     box-sizing: border-box;
                     padding-bottom: 10px;
+                    box-shadow: 1px 1px 2px 2px #4e4b4b98;
                 }
                 
                 .reviw-header {
@@ -393,20 +421,21 @@
                 
                 .review-form {
                     max-height: 100%;
-                    max-width: 100%;
                     justify-self: left;
                     margin-top: 10px;
                 }
                 
                 #text-area,
                 .review-form div>input {
+                    width: 90%;
                     border: none;
                     border-radius: 5px;
-                    max-width: 90%;
-                    font-size: 1vw;
+                    font-size: 1rem;
                     color: gray;
                     padding: 10px;
                     box-sizing: border-box;
+                    box-shadow: 1px 1px 2px 2px #4e4b4b98;
+                    padding: 0 10px;
                 }
                 
                 .review-form div>button {
@@ -462,10 +491,7 @@
                 /*Footer*/
                 
                 .footer {
-                    height: 10vw;
                     min-height: 5vh;
-                    width: 100%;
-                    max-width: 1280px;
                     display: grid;
                     grid-template: "footer-signs cont-head" "footer-signs cont-tel" "footer-signs cont-email" "footer-signs footer-adress" "baseline baseline";
                     font-size: 1.2vw;
@@ -494,8 +520,6 @@
                 }
                 
                 .footer-signs {
-                    /* width: 30%; */
-                    /* max-width: 300px; */
                     display: flex;
                     filter: grayscale(1);
                     opacity: 0.7;
