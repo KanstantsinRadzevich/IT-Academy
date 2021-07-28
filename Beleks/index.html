@@ -47,7 +47,7 @@
                 <div>Sp.z o.o.</div>
                 <div>&#171;Beleks Białystok PL&#187;</div>
                 <p>15-399, Польша, Białystok</p>
-                <p>Ulica  Handlowa  dom 7, office 15 </p>
+                <p>Ulica Handlowa dom 7, office 15 </p>
                 <a href="mailto:office@beleks.com">office@beleks.com</a>
             </div>
             <div class="our-companies-item">
@@ -114,7 +114,6 @@
             <ul>
                 <li>Дальняя Россия...</li>
             </ul>
-
             <p>
                 Наш автопарк состоит из более 200 единиц современной техники (DAF, SCANIA, MAN, IVECO, VOLVO, Камаз). Объем полезной загрузки полуприцепа - 33 европаллета (до 90 м<sup>3</sup>).
             </p>
@@ -140,16 +139,17 @@
 
         <aside>
             <div class="count" id="count">
-                Расчет Ориентировочной стоимости перевозки:
-                <form class="count-form" action="post">
+                Расчет ориентировочной стоимости перевозки:
+                <div>(* - поле обязатетельно для заполнения)</div>
+                <form class="count-form" method="GET" target="_blank">
                     <label for="from">Откуда:</label>
-                    <input type="text" id="from" name="cargo" placeholder="*Страна, Город (квадрат)"required>
+                    <input type="text" id="from" name="cargo" placeholder="*Страна, Город (квадрат)" required>
                     <label for="to">Куда:</label>
-                    <input type="text" id="to" name="cargo" placeholder="*Страна, Город (квадрат)"required>
+                    <input type="text" id="to" name="cargo" placeholder="*Страна, Город (квадрат)" required>
                     <label for="weight">Масса груза в тоннах: <span id="weight"></span></label>
-                    <input type="range" id="weightVal" name="cargo" min="1" max="24" step="0.25" oninput="myWeight()"required>
+                    <input type="range" id="weightVal" name="cargo" min="1" max="24" step="0.25" oninput="myWeight()" required>
                     <label for="description-cargo ">Описание груза:</label>
-                    <textarea name="description-cargo" id="description-cargo"  rows="4" placeholder="Сыпучий, дерево, табак, текстиль"></textarea>
+                    <textarea name="description-cargo" id="description-cargo" rows="4" placeholder="Сыпучий, дерево, табак, текстиль"></textarea>
                     <label for="dangerous" class="dangerous-class">Опасный груз:</label>
                     <input type="checkbox" name="cargo" class="dangerous-class" id="dangerousVal" value="Yes">
                     <label for="data-ready">Груз готов:</label>
@@ -159,21 +159,21 @@
                     <button type="button" id="calculate">Рассчитать</button>
                     <label for="email-count">E-mail  для обратной связи:</label>
                     <input type="email" id="email-count" placeholder="email ">
-                    <button type="submit" value="Submit">Отправить заявку</button>
+                    <button value="Submit">Отправить заявку</button>
                     <button type="reset">Очистить поля</button>
                 </form>
             </div>
-            
-            <div class="review" id="review">
-                <div class="reviw-header"> Нам важно Ваше мнение!</div>
-                <form class="review-form" action="post">
+
+            <div class="review" id="review">Нам важно Ваше мнение!
+                <div>(* - поле обязатетельно для заполнения)</div>
+                <form action="/action_page.php" class="review-form" method="POST" target="_self">
                     <div><label for="name">Ваше имя:</label></div>
-                    <div><input type="text" id="name" placeholder="Введите имя" required></div>
+                    <div><input type="text" id="name" placeholder="*Введите имя" required></div>
                     <div><label for="email-reviw">E-mail:</label></div>
-                    <div><input type="email" id="email-reviw" placeholder="Ваш email " required></div>
+                    <div><input type="email" id="email-reviw" placeholder="*Ваш email " required></div>
                     <div><label for="reviw-text-area">Введите текст:</label></div>
-                    <div><textarea id="reviw-text-area" rows="6" cols="40" maxlength="150" placeholder="Оставьте свое мнение о нас (максимум 150 символов)" required></textarea></div>
-                    <div><button type="button" id="submit-review" value="Submit">Отправить отзыв</button></div>
+                    <div><textarea id="reviw-text-area" rows="10" maxlength="250" placeholder="*Оставьте свое мнение о нас (максимум 250 символов или отправьте email)" required></textarea></div>
+                    <div><button id="submit-review" value="Submit">Отправить отзыв</button></div>
                     <div><button type="reset" class="reset-review">Очистить</button></div>
                 </form>
             </div>
@@ -182,21 +182,21 @@
                 <div id="reviws-item-content" class="reviw-item-content-class"> </div>
                 <div id="reviws-item-name" class="reviws-item-name"></div>
             </div>
-            <div class="partners ">
-                <div class="partners-img ">
-                    <div class="partners-img-header ">Наши партнеры:</div>
-                    <img src="assets/img/partners/8Marta.jpg " alt=" ">
-                    <img src="assets/img/partners/adinol.jpg " alt=" ">
-                    <img src="assets/img/partners/Agromash.gif " alt=" ">
-                    <img src="assets/img/partners/amkodor.jpg " alt=" ">
-                    <img src="assets/img/partners/belaruskabel.png " alt=" ">
-                    <img src="assets/img/partners/bobruiskselmash.jpg " alt=" ">
-                    <img src="assets/img/partners/CaspianPipline.jpg " alt=" ">
-                    <img src="assets/img/partners/Conte.png " alt=" ">
-                    <img src="assets/img/partners/eurotorg.jpg " alt=" ">
-                    <img src="assets/img/partners/MarkFormelle.jpg " alt=" ">
-                    <img src="assets/img/partners/Neman.jpg " alt=" ">
-                    <img src="assets/img/partners/specavtotechnika.jpg " alt=" ">
+            <div class="partners">
+                <div class="partners-img">
+                    <div class="partners-img-header">Наши партнеры:</div>
+                    <img src="assets/img/partners/8Marta.jpg" alt="8 Marta">
+                    <img src="assets/img/partners/adinol.jpg " alt="adinol">
+                    <img src="assets/img/partners/Agromash.gif " alt="agromash">
+                    <img src="assets/img/partners/amkodor.jpg " alt="amkodor">
+                    <img src="assets/img/partners/belaruskabel.png " alt="belaruskabel">
+                    <img src="assets/img/partners/bobruiskselmash.jpg " alt="bobruiskselmash">
+                    <img src="assets/img/partners/CaspianPipline.jpg " alt="caspianpipline">
+                    <img src="assets/img/partners/Conte.png " alt="conte">
+                    <img src="assets/img/partners/eurotorg.jpg " alt="eurotorg">
+                    <img src="assets/img/partners/MarkFormelle.jpg " alt="markformelle">
+                    <img src="assets/img/partners/Neman.jpg " alt="neman">
+                    <img src="assets/img/partners/specavtotechnika.jpg " alt="specavtotechnika">
                 </div>
             </div>
         </aside>
@@ -210,19 +210,21 @@
                 <img src="assets/img/signs/Logo_rsuto1000x1039px.png" alt="Rsuto">
                 <img src="assets/img/signs/iru.png" alt="IRU">
             </section>
+
             <div class="cont-head">Консультации по перевозкам грузов:</div>
             <section class="cont-tel">
                 <a href="tel:+375232555555" class="cont-phone"> +375(232)555555 </a>
                 <div class="cont-email"><a href="mailto:office@beleks.com">office@beleks.com</a></div>
                 <div class="footer-adress"> 246027, Беларусь, г. Гомель, ул. Борисенко, 3 </div>
             </section>
+
             <section class="baseline">
                 <div class="copyr"> &#0169;Сайт и информация на нем принадлежит Beleks.</div>
                 <div class="copyr"> Разработка сайта: rodzevich.k@gmail.com</div>
             </section>
         </footer>
     </div>
-    
+
 </body>
 
 </html>
